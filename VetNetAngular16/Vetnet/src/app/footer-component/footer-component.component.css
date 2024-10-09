@@ -1,0 +1,39 @@
+/* Estilos para el footer */
+.footer-content {
+    background-color: #2b5937; /* Fondo verde oscuro */
+    color: #ffffff; /* Color del texto */
+    padding: 30px 40px; /* Espaciado interno aumentado */
+    display: flex; /* Usar flexbox para alinear elementos */
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center; /* Alinear verticalmente */
+    border-top: 5px solid #aee085; /* Borde superior verde claro */
+    font-size: 1rem; /* Tamaño de fuente aumentado */
+}
+
+.footer-info {
+    max-width: 600px; /* Ancho máximo */
+}
+
+.footer-info p {
+    margin: 8px 0; /* Espacio entre párrafos aumentado */
+    font-size: 1rem; /* Tamaño de fuente más grande */
+}
+
+.footer-social {
+    display: flex; /* Usar flexbox para alinear los íconos */
+    gap: 20px; /* Espacio entre íconos aumentado */
+}
+
+.footer-social a {
+    transition: transform 0.3s; /* Animación para el hover */
+}
+
+.footer-social a:hover {
+    transform: scale(1.2); /* Efecto de hover aumentado */
+}
+
+.footer-social img {
+    height: 50px; /* Altura de los íconos aumentada */
+    width: 50px; /* Ancho de los íconos aumentado */
+    filter: brightness(0) invert(1); /* Cambiar color de íconos a blanco */
+}

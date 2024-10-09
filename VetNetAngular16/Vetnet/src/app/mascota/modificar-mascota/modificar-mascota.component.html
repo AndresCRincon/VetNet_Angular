@@ -1,0 +1,26 @@
+<div class="registro-background">
+  <section class="registroUsuario">
+    <h2>Modificar datos de {{mascota?.nombre}}</h2>
+    <form (ngSubmit)="modificarMascota()" #mascotaForm="ngForm">
+      <label>Nombre:
+        <input type="text" name="nombre" [(ngModel)]="mascota.nombre" required>
+      </label><br>
+      <label>Peso:
+        <input type="text" name="peso" [(ngModel)]="mascota.peso" required>
+      </label><br>
+      <label>Raza:
+        <input type="text" name="raza" [(ngModel)]="mascota.raza" required>
+      </label><br>
+      <label>Enfermedad:
+        <input type="text" name="enfermedad" [(ngModel)]="mascota.enfermedad">
+      </label><br>
+      <label>Estado:
+        <input type="text" name="estado" [(ngModel)]="mascota.estado" required>
+      </label><br>
+      <label>Edad:
+        <input type="number" name="edad" [(ngModel)]="mascota.edad" required>
+      </label><br>
+      <button type="submit">Modificar</button>
+    </form>
+  </section>
+</div>

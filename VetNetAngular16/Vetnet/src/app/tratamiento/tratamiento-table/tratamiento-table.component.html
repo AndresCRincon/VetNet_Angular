@@ -1,0 +1,31 @@
+<div class="tabla-background">
+    <section class="listado">
+            <h1>Tratamientos actuales</h1>
+
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Nombre de la mascota</th>
+                    <th>Enfermedad</th>
+                    <th>Droga en uso</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let tratamiento of tratamientoList">
+                    <td>{{tratamiento.fecha | date:'shortDate'}}</td>
+                    <td>{{tratamiento.mascota?.nombre}}</td>
+                    <td>{{tratamiento.mascota?.enfermedad}}</td>
+                    <td>{{tratamiento.droga?.nombre}}</td>
+                    <td>
+                        <button class="boton-eliminar" [routerLink]="['/tratamientos/modificar', tratamiento.id]">Modificar</button>
+                        <button class="boton-eliminar" href="#" (click)="eliminarTratamiento(tratamiento)">Eliminar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="boton" [routerLink]="['/Tratamientos/agregar']">Agregar tratamiento</button>
+    </section>
+</div>
+

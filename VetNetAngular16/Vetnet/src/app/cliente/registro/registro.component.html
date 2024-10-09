@@ -1,0 +1,34 @@
+<div class="registro-background">
+  <section class="registroUsuario">
+    <h1>Registro Dueño</h1>
+    <form (ngSubmit)="addCliente()">
+      <div class="form-group">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" [(ngModel)]="registroCliente.nombre" required />
+      </div>
+
+      <div class="form-group">
+        <label for="correo">Correo</label>
+        <input type="email" id="correo" name="correo" [(ngModel)]="registroCliente.correo" required />
+      </div>
+
+      <div class="form-group">
+        <label for="cedula">Cédula</label>
+        <input type="text" id="cedula" name="cedula" [(ngModel)]="registroCliente.cedula" required />
+      </div>
+
+      <div class="form-group">
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" name="password" [(ngModel)]="registroCliente.password" required />
+      </div>
+
+      <div class="form-group">
+        <label for="celular">Celular</label>
+        <input type="text" id="celular" name="celular" [(ngModel)]="registroCliente.celular" required />
+      </div>
+
+      <button type="submit" class="btn-submit">Registrarse</button>
+    </form>
+    <span class="login-link">¿Ya tienes una cuenta? <a [routerLink]="['/login']">Iniciar Sesión</a></span>
+  </section>
+</div>

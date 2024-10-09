@@ -1,0 +1,35 @@
+<div class="tabla-background">
+    <section class="listado">
+            <h1>Listado de Mascotas en cuidado</h1>
+
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Peso</th>
+                    <th>Raza</th>
+                    <th>Enfermedad</th>
+                    <th>Estado</th>
+                    <th>Edad</th>
+                    <th>Ver más</th> 
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let mascota of mascotaList">
+                    <td>{{mascota.nombre}}</td>
+                    <td>{{mascota.peso}}</td>
+                    <td>{{mascota.raza}}</td>
+                    <td>{{mascota.enfermedad}}</td>
+                    <td>{{mascota.estado}}</td>
+                    <td>{{mascota.edad}}</td>
+                    <td>
+                        <button class="boton-eliminar" [routerLink]="['/mascotas', mascota.id]">Ver detalles</button>
+                        <button class="boton-eliminar" [routerLink]="['/mascotas/modificar', mascota.id]">Modificar</button>
+                        <button class="boton-eliminar" href="#" (click)="eliminarMascota(mascota)">Eliminar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="boton" [routerLink]="['/mascotas/agregar']">Agregar Mascota</button>
+    </section>
+</div>

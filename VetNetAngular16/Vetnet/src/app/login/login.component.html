@@ -1,0 +1,33 @@
+<main class="content-login">
+  <section class="inicioSesion">
+    <div class="container">
+      <div class="right-section">
+        <h1>Iniciar Sesión</h1>
+
+        <form (ngSubmit)="login()">
+          <label>Tipo de usuario</label>
+          <div class="user-type">
+              <input type="radio" id="cliente" name="userType" value="cliente" [(ngModel)]="userType" required />
+              <label for="cliente">Cliente</label>
+              <input type="radio" id="veterinario" name="userType" value="veterinario" [(ngModel)]="userType" required />
+              <label for="veterinario">Veterinario</label>
+          </div>
+
+          <label for="cedula">Cédula</label>
+          <input type="text" id="cedula" [(ngModel)]="cedula" name="cedula" required />
+
+          <label for="password">Contraseña</label>
+          <input type="password" id="password" [(ngModel)]="password" name="password" required />
+
+          <div *ngIf="errorMessage">
+            <p class="error">{{ errorMessage }}</p>
+          </div>
+
+          <button type="submit">Iniciar Sesión</button>
+        </form>
+
+        <span>¿Nuevo usuario? <a [routerLink]="['/registro']">Regístrese aquí</a></span>
+      </div>
+    </div>
+  </section>
+</main>

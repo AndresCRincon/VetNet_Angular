@@ -1,0 +1,44 @@
+/* Estilos para el header */
+header {
+  background-color: #aee085; /* Fondo verde claro */
+  padding: 20px 40px; /* Espaciado interno */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  position: relative; /* Posicionamiento relativo */
+  overflow: hidden; /* Ocultar cualquier contenido que sobresalga */
+}
+
+.header-content {
+  display: flex; /* Usar flexbox para alinear elementos */
+  justify-content: center; /* Centrar todo el contenido */
+  align-items: center; /* Centrar verticalmente */
+}
+
+.logo {
+  margin-right: 40px; /* Espacio a la derecha del logo */
+}
+
+.logo img {
+  height: 150px; /* Aumentar la altura del logo */
+  width: auto; /* Mantener proporciones */
+  position: relative; /* Posicionamiento relativo para mayor control */
+}
+
+nav {
+  display: flex; /* Usar flexbox para alinear enlaces */
+  gap: 30px; /* Espacio entre enlaces */
+}
+
+nav a {
+  color: #2b5937; /* Color del texto */
+  text-decoration: none; /* Sin subrayado */
+  font-size: 1.1rem; /* Tamaño de fuente aumentado */
+  padding: 10px 15px; /* Espaciado interno */
+  transition: color 0.3s, background-color 0.3s; /* Transición para hover */
+  border-radius: 5px; /* Esquinas redondeadas */
+  font-weight: 600; /* Negrita */
+}
+
+nav a:hover {
+  color: #ffffff; /* Color del texto al pasar el mouse */
+  background-color: #2b5937; /* Fondo verde oscuro al hover */
+}

@@ -1,0 +1,866 @@
+/* Estilo general del cuerpo */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #9eff80; /* Un fondo suave para contrastar */
+    background-image: url('assets/fondo3.PNG'); /* Fondo opcional */
+    background-size:cover; /* Cubre todo el fondo */
+    background-attachment: fixed; /* Fijo al hacer scroll */
+  }
+  
+  
+  /* Encabezados */
+  h1, h2, h3 {
+    color: #2b5937;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar */
+  }
+  
+  /* Encabezado */
+  header {
+    background: linear-gradient(18deg, rgb(88, 156, 0) 0%, rgb(227, 255, 190) 100%);
+    padding: 10px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-bottom: 5px solid #6baf4c; /* Borde inferior */
+    border: #a2ffa5;
+  }
+  
+  /* Logo */
+  .logo img {
+    height: 150px;
+    width: 150px;
+  }
+  
+  /* Contenido del encabezado */
+  .header-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
+  
+  /* Navegación */
+  nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #c8e6c9;
+    background-color: rgba(43, 89, 55, 0.2); /* Leve cambio de fondo */
+    border-radius: 5px; /* Para suavizar las esquinas */
+  }
+  
+  
+  /* Contenido principal */
+  .content {
+    background-color: #c5ff8f;
+    width: 85%;
+    margin: 20px auto;
+    border-radius: 10px;
+  }
+  
+  
+  .mascot-image {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #2b5937;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+  }
+  
+  /* Contenido del footer */
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  /* Iconos sociales en el footer */
+  .footer-social img {
+    margin: 0 10px;
+    filter: brightness(0) invert(1);
+  }
+  
+  /* Enlaces en el footer */
+  .footer-content a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .footer-content a:hover {
+    text-decoration: underline;
+    color: #c8e6c9;
+  }
+  
+  /* Inputs */
+  input[type="text"], input[type="password"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #2b5937;
+  }
+  
+  /* Botones */
+  button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  button:hover {
+    background-color: #388e3c;
+    transform: scale(1.05);
+  }
+  
+  /* Botones en tablas */
+  /*.table-buttons button {
+    background-color: #66bb6a;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .table-buttons button:hover {
+    background-color: #338a45;
+  }*/
+  
+  /* Estilo de tablas */
+  table {
+    border-radius: 10px;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  table, th, td {
+    border: 2px solid #4caf50;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: center;
+    color: #2b5937;
+  }
+  
+  th {
+    background-color: #a5d6a7;
+    position: sticky;
+    top: 0; /* Fijo al hacer scroll */
+    z-index: 1; /* Asegura que esté por encima */
+  }
+  
+  td {
+    background-color: #ffffff;
+  }
+  
+  tr:hover td {
+    background-color: #c8e6c9;
+  }
+  
+  /* Servicios */
+  .services {
+    background-color: #66bb6a;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  .services h2 {
+    color: white;
+  }
+  
+  .services div {
+    display: inline-block;
+    background-color: #a8e6a1;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilo de enlaces */
+  a {
+    color: #388e3c;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Sección Intro */
+  .intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+  }
+  
+  .intro-text {
+    justify-items:center;
+    max-width: 800px;
+    background-color: #ffffff; /* Fondo blanco para contraste */
+    padding: 40px;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  
+  .intro-text h1 {
+    float: right;
+    font-size: 3rem;
+    color: #2e7d32; /* Verde oscuro atractivo */
+    margin-bottom: 20px;
+  }
+  
+  .intro-image {
+    float: left;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  /* Sección sobre nosotros */
+  .about_us {
+    background-color: #98dd6a; /* Fondo verde claro */
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid #d3e6c8; /* Borde verde claro */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-bottom: 40px; /* Espacio inferior */
+  }
+  
+  .about_us h1 {
+    color: #004d06; /* Color del encabezado */
+    font-size: 2.5rem; /* Tamaño de fuente más grande */
+    margin-bottom: 20px; /* Espacio inferior */
+  }
+  
+  /* Contenedor para texto e imagen */
+  .about-us-content {
+    display: flex; /* Hace que la imagen y el texto estén en una fila */
+      justify-content: space-between; /* Deja espacio entre el texto y la imagen */
+      align-items: flex-start; 
+      gap: 20px; /* Añade espacio entre el texto y la imagen */
+      max-width: 1000px; /* Define un ancho máximo para el contenido */
+      margin: 0 auto; /* Centra horizontalmente el bloque de contenido */
+  }
+  
+  .about-us-image {
+    flex: 1; /* La imagen ocupará menos espacio */
+      max-width: 400px; /* Ajusta el tamaño máximo de la imagen */
+      width: 100%; /* Asegura que la imagen no se agrande más allá de su tamaño máximo */
+      height: auto; /* Mantiene las proporciones de la imagen */
+      border-radius: 10px; /* Bordes redondeados opcionalmente */
+  }
+  
+  
+  .about_us p {
+    flex: 2; /* El texto ocupará más espacio que la imagen */
+      font-size: 18px;
+      line-height: 1.6;
+      text-align: left; /* Alinea el texto a la izquierda */
+  }
+  
+  /* Clínica */
+  .clinic {
+    background-color: #e8fae0; /* Fondo verde claro */
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid #c8e6c9; /* Borde verde claro */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+  
+  .clinic h1 {
+    font-size: 2.5rem; /* Tamaño de fuente más grande */
+    color: #004d05; /* Color del encabezado */
+    margin-bottom: 20px; /* Espacio inferior */
+  }
+  
+  .clinic-hours h2 {
+    font-size: 1.8rem; /* Tamaño de fuente más grande */
+    color: #00791a; /* Color del subtítulo */
+    margin-bottom: 10px; /* Espacio inferior */
+  }
+  
+  .clinic-hours p {
+    color: #014d00; /* Color del texto */
+    font-size: 1.2rem; /* Tamaño de fuente */
+    line-height: 1.6; /* Mayor interlineado */
+  }
+  
+  /* Espaciado entre secciones */
+  section {
+    margin-bottom: 40px; /* Espacio entre secciones */
+  }
+  
+  
+  
+  /* Sección de introducción */
+  /*.intro {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 10px; /* Esquinas redondeadas 
+  }*/
+  
+  /*.intro h1 {
+    font-size: 2.5rem;
+    color: #044d00;
+  }
+  
+  .intro img {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Sección sobre nosotros */
+  /*.about_us {
+    background-color: #aee085;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  .about_us h1 {
+    color: #004d06;
+    font-size: 2rem;
+  }
+  
+  .about_us p {
+    font-size: 1.2rem;
+    color: #ffffff;
+  }
+  
+  
+  /* Clínica */
+  /*.clinic {
+    background-color: #e8fae0;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .clinic h1 {
+    font-size: 2rem;
+    color: #004d05;
+  }
+  
+  .clinic-hours h2 {
+    font-size: 1.5rem;
+    color: #00791a;
+  }
+  
+  .clinic-hours p {
+    color: #014d00;
+  }*/
+  
+  /* Servicios adicionales */
+  .servicios {
+    background-color: #fafff5;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    border: #307900;
+  }
+  
+  .servicios-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    border: #307900;
+  }
+  
+  /* Caja de servicios */
+  .servicios-box {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza la transición */
+    text-align: center;
+    height: 80%;
+  }
+  
+  .servicios-box img {
+    width: 100px;
+    margin-bottom: 15px;
+  }
+  
+  .servicios-box h2 {
+    color: #004d0c;
+    font-size: 1.5rem;
+  }
+  
+  .servicios-box p {
+    color: #555;
+    font-size: 1rem;
+  }
+  
+  .servicios-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Aumenta la sombra al hacer hover */
+  }
+  
+  .registro-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4; /* Fondo suave */
+    padding: 20px;
+  }
+  
+  .registroUsuario {
+    background-color: #ffffff; /* Fondo blanco para el formulario */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    padding: 30px;
+    width: 100%;
+    max-width: 400px; /* Ancho máximo */
+  }
+  
+  h1 {
+    text-align: center; /* Centra el título */
+    color: #333; /* Color del título */
+  }
+  
+  .form-group {
+    margin-bottom: 15px; /* Espaciado entre campos */
+  }
+  
+  label {
+    display: block; /* Hacer que las etiquetas ocupen toda la línea */
+    margin-bottom: 5px; /* Espaciado inferior */
+    color: #555; /* Color de las etiquetas */
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Bordes del campo */
+    border-radius: 4px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    border-color: #33ff00; /* Color del borde al enfocar */
+    outline: none; /* Eliminar el contorno predeterminado */
+  }
+  
+  .btn-submit {
+    background-color: #52d19e; /* Color de fondo del botón */
+    color: #ffffff; /* Color del texto */
+    padding: 10px 15px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    transition: background-color 0.3s; /* Transición suave al pasar el mouse */
+  }
+  
+  .btn-submit:hover {
+    background-color: #00b339; /* Color más oscuro al pasar el mouse */
+  }
+  
+  .login-link {
+    display: block; /* Centrar el enlace de inicio de sesión */
+    text-align: center; /* Centrar texto */
+    margin-top: 15px; /* Espaciado superior */
+  }
+  
+  .login-link a {
+    color: #2d8700; /* Color del enlace */
+    text-decoration: none; /* Sin subrayado */
+  }
+  
+  .login-link a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+  }
+  
+  
+  /* Estilo general del contenido de login */
+.content-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #00000063; /* Fondo celeste claro */
+}
+
+.inicioSesion {
+  background-color: #ffffff; /* Fondo blanco para el formulario */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  max-width: 450px;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right-section {
+  width: 100%;
+  text-align: center;
+}
+
+.right-section h1 {
+  color: #00796b; /* Verde oscuro */
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.right-section form {
+  width: 100%;
+}
+
+.right-section label {
+  font-size: 1rem;
+  color: #004d40; /* Verde más oscuro */
+  display: block;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.right-section input[type="text"],
+.right-section input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #004d40; /* Borde verde oscuro */
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra interna */
+  font-size: 1rem;
+}
+
+.user-type {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.user-type label {
+  font-size: 1rem;
+  color: #00796b;
+}
+
+.right-section button {
+  background-color: #00796b; /* Verde para el botón */
+  color: white;
+  padding: 12px;
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.right-section button:hover {
+  background-color: #004d40; /* Verde más oscuro al pasar el ratón */
+  transform: scale(1.05);
+}
+
+.right-section .error {
+  color: red;
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
+
+.right-section span {
+  display: block;
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+.right-section a {
+  color: #00796b;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.right-section a:hover {
+  color: #004d40;
+  text-decoration: underline;
+}
+
+/* Estilo para los radio buttons */
+.user-type {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+.user-type input[type="radio"] {
+    display: none; /* Oculta el radio button original */
+}
+
+.user-type label {
+    position: relative;
+    padding-left: 30px; /* Espacio para el custom radio */
+    cursor: pointer;
+    font-size: 1rem;
+    color: #00796b; /* Color del texto */
+    transition: color 0.3s;
+}
+
+/* Estilo del custom radio */
+.user-type label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px; /* Ancho del radio custom */
+    height: 20px; /* Alto del radio custom */
+    border: 2px solid #00796b; /* Borde del radio */
+    border-radius: 50%; /* Hace el borde circular */
+    background-color: white; /* Fondo blanco del radio */
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Estilo cuando el radio button está seleccionado */
+.user-type input[type="radio"]:checked + label:before {
+    background-color: #00796b; /* Fondo verde cuando está seleccionado */
+    border-color: #004d40; /* Borde más oscuro cuando está seleccionado */
+}
+
+/* Estilo del círculo seleccionado */
+.user-type input[type="radio"]:checked + label:before {
+    background-color: #00796b; /* Fondo verde cuando está seleccionado */
+    border-color: #004d40; /* Borde más oscuro cuando está seleccionado */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra para destacar la selección */
+}
+
+/* Cambia el color del texto cuando se selecciona */
+.user-type input[type="radio"]:checked + label {
+    color: #004d40; /* Cambia a un verde más oscuro */
+}
+
+
+
+/*Estilo del protal*/
+  .registro-background{
+    background: #0000008d;
+    height: 100%;
+    padding: 10px;
+  }
+  
+  .content-portal{
+    background: #f7fff4;
+    width: 85%;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .tabla-background{
+    background: #f7fff4;
+    width: 85%;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .boton{
+    padding: auto;
+    border: #00791a;
+    border-radius: 5px;
+    margin-top: 50px;
+    background: #91fc96;
+  }
+  
+  .detalles {
+    background-color: #f9f9f9; /* Fondo claro */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    margin: 20px auto; /* Centra el div y agrega margen */
+    max-width: 600px; /* Ancho máximo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    font-family: 'Arial', sans-serif; /* Fuente */
+  }
+  
+  .detalles h2 {
+    font-size: 24px;
+    color: #333; /* Color de título */
+    margin-bottom: 15px; /* Espaciado debajo del título */
+    text-align: center; /* Centra el título */
+  }
+  
+  .detalles p {
+    font-size: 18px;
+    color: #555; /* Color del texto */
+    line-height: 1.6; /* Espaciado entre líneas */
+    margin-bottom: 10px; /* Espaciado entre los párrafos */
+  }
+  
+  .detalles p:last-child {
+    margin-bottom: 0; /* Sin margen inferior para el último párrafo */
+  }
+  
+  .detalles p span {
+    font-weight: bold; /* Negrita para los títulos */
+    color: #333; /* Color de los títulos */
+  }
+  
+  .content-inicio{
+    margin: 30px;
+    border-radius: 10px;
+    box-shadow: #000000;
+    background: #f9f9f978;
+    padding: 60px;
+  }
+
+  /* Estilo para las tablas */
+.styled-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 1.1em;
+  font-family: 'Arial', sans-serif;
+  min-width: 400px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  border: #004d05;
+  overflow: hidden; /* Para bordes redondeados */
+}
+
+/* Encabezados */
+.styled-table thead tr {
+  background-color: #6baf4c;
+  color: white;
+  text-align: left;
+  font-weight: bold;
+}
+
+/* Filas de la tabla */
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+/* Filas alternadas */
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+/* Hover en las filas */
+.styled-table tbody tr:hover {
+  background-color: #c8e6c9;
+}
+
+/* Botones de acción */
+button.edit-btn, button.delete-btn {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background-color 0.3s ease;
+}
+
+button.edit-btn {
+  background-color: #4caf50; /* Verde */
+  color: white;
+}
+
+button.edit-btn:hover {
+  background-color: #45a049; /* Verde más oscuro al hover */
+}
+
+button.delete-btn {
+  background-color: #f44336; /* Rojo */
+  color: white;
+}
+
+button.delete-btn:hover {
+  background-color: #d32f2f; /* Rojo más oscuro al hover */
+}
+
+/* Añadir más espacio entre columnas */
+.styled-table td, .styled-table th {
+  padding: 12px;
+}
+
+/* Texto centrado en acciones */
+.styled-table td {
+  text-align: center;
+}
+
+.perfil-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.info-cliente, .form-editar {
+  background: #d7ffb7;
+  width: 45%;
+  padding: 20px;
+  border: 2px solid #337032;
+  border-radius: 5px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-cliente h2, .form-editar h2 {
+  text-align: center;
+}
+
+.info-cliente p {
+  color: #000000;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.form-editar form div {
+  margin: 10px 0;
+}
+
+.success {
+  color: green;
+}
+
+.error {
+  color: red;
+}
+

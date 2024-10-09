@@ -1,0 +1,32 @@
+<div class="tabla-background">
+    <section class="listado">
+            <h1>Usuarios registrados</h1>
+
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Correo</th>
+                    <th>Cédula</th>
+                    <th>Celular</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let cliente of clienteList">
+                    <td>{{cliente.nombre}}</td>
+                    <td>{{cliente.correo}}</td>
+                    <td>{{cliente.cedula}}</td>
+                    <td>{{cliente.celular}}</td>
+                    <td>
+                        <button class="boton-eliminar" href="#" (click)="eliminarCliente(cliente)"
+                           onclick="return confirm('¿Estás seguro de que deseas eliminar este usuario?');">
+                           Eliminar
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </section>
+</div>

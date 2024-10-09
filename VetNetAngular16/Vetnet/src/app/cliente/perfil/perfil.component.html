@@ -1,0 +1,39 @@
+<div class="perfil-container">
+    <div class="info-cliente">
+      <h2>Información del Cliente</h2>
+        <p><strong>Nombre:</strong> {{cliente.nombre}}</p>
+        <p><strong>Email:</strong> {{cliente.correo}}</p>
+        <p><strong>Teléfono:</strong> {{cliente.celular}}</p>
+    </div>
+  
+    <div class="form-editar">
+      <h2>Editar Perfil</h2>
+      <form [formGroup]="perfilForm" (ngSubmit)="onSubmit()">
+        <div>
+          <label for="nombre">Nombre</label>
+          <input id="nombre" formControlName="nombre" type="text">
+        </div>
+  
+        <div>
+          <label for="email">Email</label>
+          <input id="email" formControlName="correo" type="email">
+        </div>
+  
+        <div>
+          <label for="telefono">Teléfono</label>
+          <input id="telefono" formControlName="celular" type="text">
+        </div>
+  
+        <button type="submit">Actualizar Perfil</button>
+      </form>
+  
+      <div *ngIf="successMessage">
+        <p class="success">{{ successMessage }}</p>
+      </div>
+  
+      <div *ngIf="errorMessage">
+        <p class="error">{{ errorMessage }}</p>
+      </div>
+    </div>
+  </div>
+  

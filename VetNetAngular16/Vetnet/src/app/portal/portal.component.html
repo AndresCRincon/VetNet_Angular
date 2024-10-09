@@ -1,0 +1,28 @@
+<main class="content-portal">
+    <h1>¡Bienvenido<span></span>!</h1>
+          <a [routerLink]="['/usuarios']">USUARIOS</a>
+    <h2>Elije alguna de las siguientes opciones:</h2>
+    <hr />
+    <div class="servicios-container">
+        <a [routerLink]="['/mascotas']">
+      <div class="servicios-box">
+        <img src="assets/dog_icon.png" alt="Mascotas" />
+        <h2>Ver mis mascotas</h2>
+        <p>
+          Gestiona a tus mascotas registradas en nuestro portal.
+        </p>
+      </div>
+    </a>
+    <a [routerLink]="['/perfil']">
+
+        
+      <div class="servicios-box">
+        <img src="assets/gear.png" alt="Configuracion" />
+        <h2>Configuración de perfil</h2>
+        <p>
+          Gestiona, modifica o elimina tu perfil.
+        </p>
+      </div>
+      </a>
+    </div>
+</main>
