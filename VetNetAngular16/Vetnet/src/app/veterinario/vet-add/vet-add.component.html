@@ -1,0 +1,34 @@
+<div class="registro-background">
+    <section class="registroUsuario">
+      <h1>Registro Veterinario</h1>
+      <form (ngSubmit)="agregarVet()">
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" [(ngModel)]="registroVet.nombre" required />
+        </div>
+  
+        <div class="form-group">
+          <label for="especialidad">Especialidad</label>
+          <input type="text" id="especialidad" name="especialidad" [(ngModel)]="registroVet.especialidad" required />
+        </div>
+  
+        <div class="form-group">
+          <label for="cedula">Cédula</label>
+          <input type="text" id="cedula" name="cedula" [(ngModel)]="registroVet.cedula" required />
+        </div>
+  
+        <div class="form-group">
+          <label for="password">Contraseña</label>
+          <input type="password" id="password" name="password" [(ngModel)]="registroVet.password" required />
+        </div>
+  
+        <div class="form-group">
+          <label for="foto">Foto</label>
+          <input type="text" id="foto" name="foto" [(ngModel)]="registroVet.foto" required />
+        </div>
+  
+        <button type="submit" class="btn-submit">Registrar empleado</button>
+      </form>
+    </section>
+  </div>
+  

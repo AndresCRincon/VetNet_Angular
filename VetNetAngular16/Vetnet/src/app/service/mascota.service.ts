@@ -64,8 +64,8 @@ export class MascotaService {
     this.http.put('http://localhost:8090/mascota/modificar',+id).subscribe();
   }*/
 
-  updateMascota(mascota: Mascota): Observable<Mascota> {
-    return this.http.put<Mascota>(`http://localhost:8090/mascota/modificar/${mascota.id}`, mascota);
+  updateMascota(mascota: Mascota, id:number): Observable<Mascota> {
+    return this.http.put<Mascota>(`http://localhost:8090/mascota/modificar/${mascota.id}/${id}`, mascota);
   }
   
   findAll(): Observable<Mascota[]> {
@@ -73,7 +73,7 @@ export class MascotaService {
   }
  
    findById(id:number):Observable<Mascota>{
-     return this.http.get<Mascota>(`http://localhost:8090/mascota/find/${id}`);
+    return this.http.get<Mascota>(`http://localhost:8090/mascota/find/${id}`);
    }
 
    findByCliente(id:number):Observable<Mascota[]>{
@@ -84,7 +84,7 @@ export class MascotaService {
      this.http.delete(`http://localhost:8090/mascota/eliminar/${id}`).subscribe();
    }
   
-   addMascota(mascota:Mascota){
-    this.http.post('http://localhost:8090/mascota/registrar',mascota).subscribe();
+   addMascota(mascota:Mascota, id:number){
+    this.http.post(`http://localhost:8090/mascota/registrar/${id}`,mascota).subscribe();
   }
 }

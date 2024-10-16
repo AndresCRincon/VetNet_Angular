@@ -22,11 +22,15 @@ export class TratamientoService {
     return this.http.post(`http://localhost:8090/tratamiento/registrar`, tratamiento);
   }
 
-  modificarTratamiento(tratamiento: Tratamiento): Observable<any> {
-    return this.http.put(`http://localhost:8090/tratamiento/modificar/${tratamiento.id}`, tratamiento);
+  updateTratamiento(tratamiento: Tratamiento, id:number): Observable<Tratamiento> {
+    return this.http.put<Tratamiento>(`http://localhost:8090/tratmiento/modificar/${tratamiento.id}/${id}`, tratamiento);
   }
 
   deleteById(id: number){
     return this.http.delete(`http://localhost:8090/tratamiento/eliminar/${id}`).subscribe();
+  }
+
+  addTratamiento(tratamiento:Tratamiento, id:number){
+    this.http.post(`http://localhost:8090/tratamiento/registrar/${id}`,tratamiento).subscribe();
   }
 }

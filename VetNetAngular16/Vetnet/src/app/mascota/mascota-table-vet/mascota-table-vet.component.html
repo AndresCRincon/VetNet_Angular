@@ -12,11 +12,10 @@
                 <p>Estado: {{mascota.estado}}</p>
                 <p>Edad: {{mascota.edad}}</p>
                 <div class="botones">
+                    <button class="boton-eliminar" [routerLink]="['/mascotas/modificar', mascota.id]">Modificar</button>
                     <button class="boton-eliminar" (click)="eliminarMascota(mascota)">Eliminar</button>
                 </div>
             </div>
         </div>
-
-        <button class="button-agregar" [routerLink]="['/mascotas/agregar']">Agregar Mascota</button>
     </section>
 </div>

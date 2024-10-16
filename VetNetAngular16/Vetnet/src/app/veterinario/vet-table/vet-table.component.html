@@ -1,1 +1,21 @@
-<p>vet-table works!</p>
+<div class="tabla-background">
+    <section class="listado">
+        <h1>Empleados activos</h1>
+
+        <div class="tarjetas-container">
+            <div *ngFor="let vet of vetList" class="tarjeta">
+                <img [src]="vet.foto" alt="imagen_veterinario" class="tarjeta-imagen">
+                <h3>{{vet.nombre}}</h3>
+                <p>Especialidad: {{vet.especialidad}}</p>
+                <p>Numero de atenciones: {{vet.num_atenciones}}</p>
+                <div class="botones">
+                    <button class="boton-eliminar" [routerLink]="['/vet/modificar', vet.id]">Modificar</button>
+                    <button class="boton-eliminar" (click)="eliminarVet(vet)">Eliminar</button>
+                </div>
+            </div>
+        </div>
+
+        <button class="button-agregar" [routerLink]="['/vet/agregar']">Agregar empleado</button>
+    </section>
+</div>
+

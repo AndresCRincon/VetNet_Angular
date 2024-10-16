@@ -1,0 +1,25 @@
+<div class="registro-background">
+    <section class="registroUsuario">
+      <h2>Nuevo tratamiento</h2>
+      <form (ngSubmit)="agregarTratamiento()" #tratamientoForm="ngForm">
+        <label>Fecha:
+          <input type="date" name="fecha" [(ngModel)]="tratamiento.fecha" required>
+        </label><br>
+  
+        <label>Mascota:
+          <select name="mascota" [(ngModel)]="tratamiento.mascota" required>
+            <option *ngFor="let mascota of mascotas" [ngValue]="mascota">{{ mascota.nombre }}</option>
+          </select>
+        </label><br>
+  
+        <label>Droga:
+          <select name="droga" [(ngModel)]="tratamiento.droga" required>
+            <option *ngFor="let droga of drogas" [ngValue]="droga">{{ droga.nombre }}</option>
+          </select>
+        </label><br>
+  
+        <button type="submit">Agregar</button>
+      </form>
+    </section>
+  </div>
+  

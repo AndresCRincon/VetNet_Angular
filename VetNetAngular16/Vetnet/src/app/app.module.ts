@@ -16,6 +16,12 @@ import { TratamientoTableComponent } from './tratamiento/tratamiento-table/trata
 import { TratamientoDetailComponent } from './tratamiento/tratamiento-detail/tratamiento-detail.component';
 import { VetTableComponent } from './veterinario/vet-table/vet-table.component';
 import { DrogaDetailComponent } from './droga/droga-detail/droga-detail.component';
+import { AdminDashboardComponent } from './admin/admin-dashboard/admin-dashboard.component';
+import { AdminPortalComponent } from './admin/admin-portal/admin-portal.component';
+import { VetAddComponent } from './veterinario/vet-add/vet-add.component';
+import { ModificarVetComponent } from './veterinario/modificar-vet/modificar-vet.component';
+import { TratamientoAddComponent } from './tratamiento/tratamiento-add/tratamiento-add.component';
+import { MascotaTableVetComponent } from './mascota/mascota-table-vet/mascota-table-vet.component';
 @NgModule({
   declarations:[
     AppComponent,

@@ -15,10 +15,17 @@
         <input type="text" name="enfermedad" [(ngModel)]="mascota.enfermedad">
       </label><br>
       <label>Estado:
-        <input type="text" name="estado" [(ngModel)]="mascota.estado" required>
+        <select name="estado" [(ngModel)]="mascota.estado" required>
+          <option value="Activo">Activo</option>
+          <option value="Inactivo">Inactivo</option>
+        </select>
       </label><br>
+      
       <label>Edad:
         <input type="number" name="edad" [(ngModel)]="mascota.edad" required>
+      </label><br>
+      <label>Foto:
+        <input type="text" name="imagen" [(ngModel)]="mascota.imagen" required>
       </label><br>
       <button type="submit">Agregar</button>
     </form>

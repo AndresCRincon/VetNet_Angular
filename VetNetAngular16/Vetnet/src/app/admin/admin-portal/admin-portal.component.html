@@ -1,0 +1,21 @@
+<main class="content-portal">
+    <h1>¡Bienvenido, Administrador!</h1>
+    <h2>Seleccione una opción:</h2>
+    <hr />
+    <div class="servicios-container">
+        <a [routerLink]="['/veterinarios']">
+            <div class="servicios-box">
+                <img src="assets/hospitall.png" alt="Veterinarios" />
+                <h2>Gestionar Veterinarios</h2>
+                <p>Ver, agregar, modificar y eliminar veterinarios.</p>
+            </div>
+        </a>
+        <a routerLink="/admin/dashboard">
+            <div class="servicios-box">
+                <img src="assets/graph.png" alt="Dashboard" />
+                <h2>Ver Dashboard</h2>
+                <p>Analizar los KPIs del negocio.</p>
+            </div>
+        </a>
+    </div>
+</main>

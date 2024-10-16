@@ -1,17 +1,17 @@
-import { Component } from '@angular/core';
-import { Mascota } from '../mascota';
-import { MascotaService } from '../../service/mascota.service';
 import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { Mascota } from '../mascota';
+import { MascotaService } from 'src/app/service/mascota.service';
 
 @Component({
-  selector: 'app-mascota-table',
+  selector: 'app-mascota-table-vet',
   standalone: true,
   imports: [CommonModule,RouterModule],
-  templateUrl: './mascota-table.component.html',
-  styleUrls: ['./mascota-table.component.css']
+  templateUrl: './mascota-table-vet.component.html',
+  styleUrls: ['./mascota-table-vet.component.css']
 })
-export class MascotaTableComponent {
+export class MascotaTableVetComponent {
 
   selectedMascot!: Mascota;
   mascotaList!: Mascota[];
@@ -21,12 +21,9 @@ export class MascotaTableComponent {
   }
 
   ngOnInit():void{
-    const clienteId = localStorage.getItem('clienteId');
-    if(clienteId){
-      this.mascotaService.findByCliente(+clienteId).subscribe(
+      this.mascotaService.findAll().subscribe(
         (mascotas) => this.mascotaList = mascotas
       )
-    }
   } 
 
 

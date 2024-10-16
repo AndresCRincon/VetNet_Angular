@@ -52,7 +52,8 @@ export class ClienteService {
  }
 
   findById(id:number):Observable<Cliente>{
-    return this.http.get<Cliente>('http://localhost:8090/cliente/find'+id);
+    return this.http.get<Cliente>(`http://localhost:8090/cliente/find/${id}`);
+
   }
 
   deleteById(id:number){
@@ -68,7 +69,7 @@ export class ClienteService {
   }
 
   obtenerMascotas(clienteId: number): Observable<Mascota[]> {
-    return this.http.get<Mascota[]>('http://localhost:8090/cliente/mascotas'+clienteId);
-}
+    return this.http.get<Mascota[]>(`http://localhost:8090/cliente/mascotas/${clienteId}`);
+ }
 
 }

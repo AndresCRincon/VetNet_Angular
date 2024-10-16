@@ -28,7 +28,10 @@ export class MascotaAddComponent {
   constructor(private mascotaService: MascotaService, private router: Router) {}
 
   agregarMascota() {
-    this.mascotaService.addMascota(this.mascota);
-    this.router.navigate(['/mascotas']);
+    const clienteId = localStorage.getItem('clienteId');
+    if(clienteId){
+      this.mascotaService.addMascota(this.mascota,+clienteId);
+      this.router.navigate(['/mascotas']);
+    }
   }
 }

@@ -13,6 +13,13 @@ import { ModificarMascotaComponent } from './mascota/modificar-mascota/modificar
 import { PerfilComponent } from './cliente/perfil/perfil.component';
 import { PortalVetComponent } from './portal-vet/portal-vet.component';
 import { TratamientoTableComponent } from './tratamiento/tratamiento-table/tratamiento-table.component';
+import { AdminPortalComponent } from './admin/admin-portal/admin-portal.component';
+import { AdminDashboardComponent } from './admin/admin-dashboard/admin-dashboard.component';
+import { VetTableComponent } from './veterinario/vet-table/vet-table.component';
+import { VetAddComponent } from './veterinario/vet-add/vet-add.component';
+import { ModificarVetComponent } from './veterinario/modificar-vet/modificar-vet.component';
+import { TratamientoAddComponent } from './tratamiento/tratamiento-add/tratamiento-add.component';
+import { MascotaTableVetComponent } from './mascota/mascota-table-vet/mascota-table-vet.component';
 
 const routes: Routes = [
   { path: 'inicio', component: InicioComponent },
@@ -28,6 +35,13 @@ const routes: Routes = [
   { path: 'mascotas/modificar/:id', component: ModificarMascotaComponent},
   { path: 'perfil', component: PerfilComponent },
   { path: 'tratamientos', component: TratamientoTableComponent },
+  { path: 'admin-portal', component: AdminPortalComponent },
+  { path: 'admin/dashboard', component: AdminDashboardComponent },
+  { path: 'veterinarios', component: VetTableComponent},
+  { path: 'vet/agregar', component: VetAddComponent},
+  { path: 'vet/modificar/:id', component: ModificarVetComponent},
+  { path: 'tratamientos/agregar', component: TratamientoAddComponent},
+  { path: 'vet/mascotas', component: MascotaTableVetComponent},
   { path: '', pathMatch: 'full', redirectTo: 'inicio' }
 ];
 

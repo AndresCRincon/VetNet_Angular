@@ -864,3 +864,212 @@ button.delete-btn:hover {
   color: red;
 }
 
+.tarjetas-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  font-size: small;
+}
+
+.tarjeta {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 15px;
+  width: 200px; /* Ajusta el tamaño según tus necesidades */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.tarjeta:hover {
+  transform: scale(1.05);
+}
+
+.tarjeta-imagen {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.botones {
+  margin-top: 10px;
+}
+
+.button-agregar{
+  float:inline-start;
+}
+
+
+
+/*Estilo para el dashboard*/
+
+/* Estilo general del Dashboard */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 1200px;
+  background: #f9fff5; /* Fondo claro */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para los KPIs individuales */
+.kpi-card {
+  background: #ffffff;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.kpi-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Títulos de los KPIs */
+.kpi-card h3 {
+  color: #2b5937; /* Verde oscuro */
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+/* Valor del KPI */
+.kpi-value {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #00796b; /* Verde llamativo */
+  margin: 10px 0;
+}
+
+/* Contenedor para múltiples KPIs */
+.kpis-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+/* Estilo para gráficas */
+.chart-container {
+  width: 90%;
+  height: 600px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Título del Dashboard */
+.dashboard-title {
+  font-size: 2rem;
+  color: #2b5937;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Contenedor para cada sección de análisis */
+.analysis-section {
+  margin: 30px auto;
+  padding: 20px;
+  max-width: 900px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.analysis-section h2 {
+  font-size: 1.8rem;
+  color: #00796b;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.analysis-section p {
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Estilo de botones en el dashboard */
+.dashboard-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  margin: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.dashboard-button:hover {
+  background-color: #388e3c;
+  transform: scale(1.05);
+}
+
+/* Sección de gráficos */
+.graph-section {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.graph-title {
+  font-size: 1.8rem;
+  color: #2b5937;
+  margin-bottom: 20px;
+}
+
+/* Indicadores destacados */
+.kpi-highlight {
+  display: inline-block;
+  background-color: #f0fff0;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-size: 1.3rem;
+  color: #2e7d32;
+  margin: 10px;
+  text-align: center;
+}
+
+/* Contenedor de Gráficas */
+.graph-container {
+  margin: 20px 0;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de mensajes de error o éxito en el dashboard */
+.alert-message {
+  margin: 20px auto;
+  padding: 15px;
+  max-width: 800px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+}
+
+.alert-success {
+  background-color: #e6ffed;
+  color: #2e7d32;
+}
+
+.alert-error {
+  background-color: #ffe6e6;
+  color: #d32f2f;
+}
+

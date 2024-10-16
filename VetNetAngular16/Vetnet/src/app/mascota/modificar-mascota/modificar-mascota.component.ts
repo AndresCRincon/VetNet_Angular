@@ -34,8 +34,11 @@ export class ModificarMascotaComponent implements OnInit {
   }
 
   modificarMascota() {
-    this.mascotaService.updateMascota(this.mascota).subscribe(() => {
-      this.router.navigate(['/mascotas']);
-    });
+    const clienteId = localStorage.getItem('clienteId');
+    if(clienteId){
+      this.mascotaService.updateMascota(this.mascota,+clienteId).subscribe(() => {
+        this.router.navigate(['/vet/mascotas']);
+      });
+    }
   }
 }

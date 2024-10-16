@@ -1,0 +1,48 @@
+<div class="dashboard-container">
+  <h1 class="dashboard-title">Dashboard del Administrador</h1>
+  <div class="kpis-wrapper">
+    <div class="kpi-card">
+      <h3>Mascotas en Tratamiento</h3>
+      <p class="kpi-value">{{ mascotasTratamiento !== undefined ? mascotasTratamiento : 'Cargando...' }}</p>
+    </div>
+
+    <div class="kpi-card">
+      <h3>Atenciones Realizadas</h3>
+      <p class="kpi-value">{{ numAtenciones !== undefined ? numAtenciones : 'Cargando...' }}</p>
+    </div>
+
+    <div class="kpi-card">
+      <h3>Precio Total de Tratamientos</h3>
+      <p class="kpi-value">${{ precioTotal !== undefined ? precioTotal : 'Cargando...' }}</p>
+    </div>
+  </div>
+
+  <div class="kpis-wrapper">
+
+    <div class="graph-section">
+      <h2 class="graph-title">Gráfica de Distribución de Especialidades</h2>
+      <div class="graph-container">
+        <canvas baseChart 
+                [data]="pieChartData"
+                [options]="pieChartOptions"
+                [legend]="pieChartLegend"
+                [type]="pieChartType">
+        </canvas>
+      </div>
+    </div>
+  
+    <div class="graph-section">
+      <h2 class="graph-title">Medicamentos con Costes Más Altos</h2>
+      <div class="graph-container">
+        <canvas baseChart 
+                [data]="medCostChartData"
+                [options]="medCostChartOptions"
+                [type]="medCostChartType">
+        </canvas>
+      </div>
+    </div>
+
+  </div>
+
+  
+</div>

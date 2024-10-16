@@ -5,7 +5,7 @@ import { Veterinario } from "../veterinario/veterinario";
 export interface Tratamiento{
     id:number;
     fecha:string;
-    mascota:Mascota;
-    veterinario:Veterinario;
-    droga:Droga;
+    mascota?:Mascota;
+    veterinario?:Veterinario;
+    droga?:Droga;
 }

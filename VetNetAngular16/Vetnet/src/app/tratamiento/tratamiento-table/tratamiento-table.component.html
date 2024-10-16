@@ -9,6 +9,7 @@
                     <th>Nombre de la mascota</th>
                     <th>Enfermedad</th>
                     <th>Droga en uso</th>
+                    <th>Estado</th>
                     <th>Acciones</th>
                 </tr>
             </thead>
@@ -18,14 +19,15 @@
                     <td>{{tratamiento.mascota?.nombre}}</td>
                     <td>{{tratamiento.mascota?.enfermedad}}</td>
                     <td>{{tratamiento.droga?.nombre}}</td>
+                    <td>{{tratamiento.mascota?.estado}}</td>
                     <td>
-                        <button class="boton-eliminar" [routerLink]="['/tratamientos/modificar', tratamiento.id]">Modificar</button>
                         <button class="boton-eliminar" href="#" (click)="eliminarTratamiento(tratamiento)">Eliminar</button>
                     </td>
                 </tr>
             </tbody>
         </table>
-        <button class="boton" [routerLink]="['/Tratamientos/agregar']">Agregar tratamiento</button>
+        <button class="boton" [routerLink]="['/vet/mascotas']">Ver mascotas</button>
+        <button class="boton" [routerLink]="['/tratamientos/agregar']">Nuevo tratamiento</button>
     </section>
 </div>
 
